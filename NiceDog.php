@@ -132,7 +132,7 @@ class NiceDog {
                 exit();//Argh! Its not pretty, but usefull...
             }    
         }
-        call_user_func(array('r404' , $_SERVER['REQUEST_METHOD']));  
+        call_user_func_array('r404' , $_SERVER['REQUEST_METHOD']);  
     }   
     
     /* Parse url arguments */
